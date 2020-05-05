@@ -1,0 +1,56 @@
+<com.nmc.zoom.ZoomView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="fill_parent"
+    android:layout_width="fill_parent">
+<RelativeLayout 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+	>
+
+     <TextView
+        android:id="@+id/txtDateUpdateRev"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:text="LastUpdate"
+        android:textSize="14dp"
+        android:textStyle="italic" />
+     <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="18dp"
+        android:text="All Network" />
+    <com.github.mikephil.charting.charts.LineChart
+        android:id="@+id/chart"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true" >
+    </com.github.mikephil.charting.charts.LineChart>
+    
+    
+    
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="218dp"
+        android:text="RCS" />
+    <com.github.mikephil.charting.charts.LineChart
+        android:id="@+id/chartRCS"
+        android:layout_width="match_parent"
+        android:layout_height="190dp"
+        android:layout_marginTop="220dp"
+        android:layout_centerHorizontal="true" >
+    </com.github.mikephil.charting.charts.LineChart>
+
+   
+
+</RelativeLayout>
+</com.nmc.zoom.ZoomView>
+

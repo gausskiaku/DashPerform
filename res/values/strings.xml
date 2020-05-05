@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Dash Perform NMC</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_rev__traf">Rev_Traf</string>
+    <string name="title_activity_two_g">TwoG</string>
+    <string name="title_activity_three_g">ThreeG</string>
+    <string name="title_activity_dash_two_g">DashTwoG</string>
+    <string name="title_activity_three">Three</string>
+    <string name="title_activity_zoom">Zoom</string>
+    <string name="btCancel">Cancel Repeating Timer</string>
+    <string name="btStart">Start Repeating Timer</string>
+    <string name="btOneTime">One-time Timer</string>
+    <string name="title_activity_erreur">Erreur</string>
+    <string name="title_activity_view_pager">ViewPager</string>
+    <string name="title_activity_slider_tab">SliderTab</string>
+    <string name="title_activity_sqlite">SQLite</string>
+    <string name="title_activity_accueil">Accueil</string>
+
+</resources>

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.nmc.dashperform"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="21" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/dashperform"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".MainActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+                
+        </activity>
+        <activity
+            android:name=".Rev_Traf"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:label="@string/title_activity_rev__traf"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".TwoG"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:label="@string/title_activity_two_g"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".ThreeG"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:label="@string/title_activity_three_g"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".Rcs"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:label="@string/title_activity_dash_two_g"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".Three"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:label="@string/title_activity_three"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".Zoom"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:label="@string/title_activity_zoom" >
+        </activity>
+
+        <receiver android:name="alarme.AlarmManagerBroadcastReceiver" >
+        </receiver>
+
+        <activity
+            android:name=".Erreur"
+            android:label="@string/title_activity_erreur" >
+        </activity>
+        <activity android:name=".SliderTab" >
+           
+        </activity>
+        <activity android:name=".SliderTabWeekly" >
+           
+        </activity>
+        <activity android:name=".SliderTabTwoWeekly" >
+           
+        </activity>
+        <activity android:name=".SliderTabMonthly" >
+        </activity>
+         <activity android:name=".SliderTabPeriod" >
+        </activity>
+        <activity
+            android:name=".SQLite"
+            android:label="@string/title_activity_sqlite" >
+            
+        </activity>
+         <activity
+            android:name=".ActivityMain"
+            android:label="ActivityMain" >
+        </activity>
+        <activity
+            android:name=".Accueil"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+                
+            </intent-filter> 
+        </activity>
+    </application>
+
+</manifest>

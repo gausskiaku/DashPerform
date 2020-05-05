@@ -1,0 +1,154 @@
+<com.nmc.zoom.ZoomView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="fill_parent"
+    android:layout_width="fill_parent">
+<RelativeLayout 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+   <Button
+        android:id="@+id/p3G"
+        android:layout_width="10dp"
+        android:layout_height="10dp"
+        android:layout_marginTop="125dp"
+        android:layout_marginLeft="5dp"
+        android:background="#FF0000"
+        android:text="P"
+        android:textSize="7dp"
+        android:textColor="#FFFFFF" />
+    
+    <Button
+        android:id="@+id/i3G"
+        android:layout_width="10dp"
+        android:layout_height="10dp"
+        android:layout_marginTop="125dp"
+        android:layout_marginLeft="15dp"
+        android:background="#FFA500"
+        android:text="I"
+        android:textSize="7dp"
+        android:textColor="#FFFFFF" />
+    <Button
+        android:id="@+id/g3G"
+        android:layout_width="10dp"
+        android:layout_height="10dp"
+        android:layout_marginTop="125dp"
+        android:layout_marginLeft="25dp"
+        android:background="#FFD700"
+        android:text="G"
+        android:textSize="7dp"
+        android:textColor="#FFFFFF" /> 
+     <Button
+        android:id="@+id/e3G"
+        android:layout_width="10dp"
+        android:layout_height="10dp"
+        android:layout_marginTop="125dp"
+        android:layout_marginLeft="35dp"
+        android:background="#9ACD32"
+        android:text="E"
+        android:textSize="7dp"
+        android:textColor="#FFFFFF" /> 
+     <Button
+        android:id="@+id/x3G"
+        android:layout_width="10dp"
+        android:layout_height="10dp"
+        android:layout_marginTop="125dp"
+        android:layout_marginLeft="45dp"
+        android:background="#008000"
+        android:text="X"
+        android:textSize="7dp"
+        android:textColor="#FFFFFF" />
+    
+    
+    <TextView
+        android:id="@+id/txtDateUpdate3G"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:text="LastUpdate"
+        android:textSize="14dp"
+        android:textStyle="italic" />
+    <TextView
+        android:id="@+id/txtDash3G"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:gravity="center_vertical"
+        android:text="Dashboard"
+        android:textColor="#ff0000"
+        android:textSize="15dp"
+        android:textStyle="bold" />
+    
+    <TextView
+        android:id="@+id/txt3gCSSR"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/speedometer3gCSSR"
+        android:layout_marginLeft="105dp"
+        android:text="Cssr : "
+        android:textSize="11dp"
+        android:textStyle="italic" />
+
+    <TextView
+        android:id="@+id/txt3gAVAIL"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/txt3gCSSR"
+        android:layout_alignBottom="@+id/txt3gCSSR"
+        android:layout_alignRight="@+id/speedometer3gAVAIL"
+         android:layout_marginLeft="190dp"
+        android:text="Availability  : "
+        android:textSize="11dp"
+        android:textStyle="italic" />
+
+    <TextView
+        android:id="@+id/txt3gCDR"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+		android:layout_marginTop="103dp"
+        android:layout_marginLeft="5dp"
+        android:text="Cdr : "
+        android:textSize="11dp"
+        android:textStyle="italic" />
+
+    <TextView
+        android:id="@+id/txt3G"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="150dp"
+        android:layout_toLeftOf="@+id/speedometer3gAVAIL"
+        android:text="3G KPIs Evolution"
+        android:textColor="#ff0000"
+        android:textSize="14dp"
+        android:textStyle="bold" />
+
+    <com.github.mikephil.charting.charts.LineChart
+        android:id="@+id/chart3G"
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:layout_below="@+id/txt3G"
+        android:layout_marginTop="4dp" >
+    </com.github.mikephil.charting.charts.LineChart>
+    
+    <com.nmc.meter.SpeedometerView
+        android:id="@+id/speedometer3gCDR"
+        android:layout_width="90dp"
+        android:layout_height="120dp"
+        android:layout_alignLeft="@+id/chartRCS"
+        android:layout_marginTop="60dp" />
+
+    <com.nmc.meter.SpeedometerView
+        android:id="@+id/speedometer3gCSSR"
+        android:layout_width="90dp"
+        android:layout_height="120dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp" />
+
+    <com.nmc.meter.SpeedometerView
+        android:id="@+id/speedometer3gAVAIL"
+        android:layout_width="90dp"
+        android:layout_height="120dp"
+        android:layout_alignRight="@+id/chart3G"
+        android:layout_marginTop="60dp" />
+
+</RelativeLayout>
+</com.nmc.zoom.ZoomView>
